@@ -1,0 +1,17 @@
+.ItineraryLists {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow-y: auto;
+}
+
+@media (max-width: 555px) {
+  .ItineraryLists {
+    height: 100vh;
+  }
+}
+@media (max-width: 728px) {
+  .ItineraryLists {
+    min-height: 100vh;
+  }
+}

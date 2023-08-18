@@ -1,0 +1,67 @@
+{
+  "days": [
+    {
+      "day": 1,
+      "date": "2023-08-18",
+      "activities": [
+        ["Arrival and Check-in", [28.6139, 77.209]],
+        ["India Gate", [28.6129, 77.2295]],
+        ["Qutub Minar", [28.5245, 77.1855]]
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2023-08-19",
+      "activities": [
+        ["Humayun's Tomb", [28.5933, 77.2507]],
+        ["Lotus Temple", [28.5535, 77.2588]],
+        ["Akshardham Temple", [28.6127, 77.2773]]
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2023-08-20",
+      "activities": [
+        ["Raj Ghat", [28.6406, 77.2495]],
+        ["Jama Masjid", [28.6507, 77.2334]],
+        ["Chandni Chowk", [28.6507, 77.2303]]
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2023-08-21",
+      "activities": [
+        ["Red Fort", [28.6562, 77.241]],
+        ["National Museum", [28.6129, 77.2305]],
+        ["Hauz Khas Village", [28.5549, 77.1941]]
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2023-08-22",
+      "activities": [
+        ["Jantar Mantar", [28.6271, 77.2166]],
+        ["Rajpath and Rashtrapati Bhavan", [28.6142, 77.199]],
+        ["Dilli Haat", [28.573, 77.207]]
+      ]
+    },
+    {
+      "day": 6,
+      "date": "2023-08-23",
+      "activities": [
+        ["Gurudwara Bangla Sahib", [28.6265, 77.2091]],
+        ["Lodi Gardens", [28.5931, 77.2197]],
+        ["Departure", [28.5562, 77.1]]
+      ]
+    },
+    {
+      "day": 7,
+      "date": "2023-08-23",
+      "activities": [
+        ["Mumbai Dabbawalas", [18.9865, 72.8175]],
+        ["Shopping in Bandra", [19.0607, 72.8367]],
+        ["Departure", [19.0882, 72.8684]]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron&family=Poppins:wght@400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --primary-font: #ff1354;
+}
+
+.itinerary-card-right {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.itinerary-card-left {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+
+.itinerary-card h2 {
+  font-family: "Montserrat", sans-serif;
+  padding-block: 5px;
+  color: var(--primary-font);
+}
+
+.itinerary-card p {
+  margin: 5px 0;
+  color: #fff;
+}
+
+.itinerary-card-wrapper {
+  padding: 1.5rem 1rem;
+  margin: 1rem;
+  width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+  backdrop-filter: blur(4px) saturate(180%);
+  -webkit-backdrop-filter: blur(4px) saturate(180%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.itinerary-card-wrapper span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--primary-font);
+  padding: 8px;
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid var(--primary-font);
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
+
+.arrow-left {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid var(--primary-font);
+  transform: translateY(-50%);
+}
+
+@media (max-width: 555px) {
+  .itinerary-card-wrapper {
+    width: 70%;
+  }
+  .itinerary-card-left {
+    justify-content: end;
+  }
+}
+
+@media (max-width: 728px) {
+  .itinerary-card {
+    justify-content: center;
+  }
+  .itinerary-card-wrapper {
+    width: 70%;
+  }
+}
