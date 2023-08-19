@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+header{
+    font-family: 'Lobster', cursive;
+}
+
+.login-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: max-content; */
+}
+
+.tagline{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* width: 100px; */
+    font-size: 60px;
+}
+
+.tagline header{
+    padding: 25px;
+}
+
+.login-form{
+    width: 500px;
+    height: 700px;
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+}
+
+.sign-in-opts{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.link{
+    cursor: pointer;
+}
+
+.link::after{
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: red;
+    transform: scale(0);
+    transition: 0.2s ease-out;
+}
+
+.link-current{
+    color: red;
+}
+
+.link:hover::after{
+    transform: scale(1);
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px; */
+}
+
+.sign-in-div{
+    margin-top: 100px;
+}
+
+.sign-in-div form input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid;
+    padding: 15px;
+    width: calc(100% - 100px);
+    margin-bottom: 20px;
+    background-color: rgb(0,0,0,0);
+}
+
+.sign-in-div form button{
+    width: 250px;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.sign-up-div{
+    margin-top: 100px;
+}
+
+.sign-up-div form input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid;
+    padding: 15px;
+    width: calc(100% - 100px);
+    margin-bottom: 20px;
+    background-color: rgb(0,0,0,0);
+}
+
+.sign-up-div form button{
+    width: 250px;
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.form-hide{
+    display: none;
+}
