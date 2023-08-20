@@ -1,10 +1,11 @@
+// src/App.js
 import React from "react";
-import HomePage from "./components/Homepage/Homepage";
+import Homepage from "../src/components/Homepage/Homepage"; // Adjust the path according to your structure
 
 function App() {
   return (
-    <div>
-      <HomePage />
+    <div className="app">
+      <Homepage />
     </div>
   );
 }
