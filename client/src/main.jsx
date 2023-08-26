@@ -1,10 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import "./components/Homepage/Homepage.css";
+import Homepage from "./components/Homepage/Homepage";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+function Main() {
+  return (
+    <div className="App">
+      <Homepage />
+    </div>
+  );
+}
+
+ReactDOM.render(<Main />, document.getElementById("root"));
