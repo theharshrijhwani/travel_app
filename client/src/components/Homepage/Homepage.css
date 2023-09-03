@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -11,10 +10,12 @@
 }
 
 .content {
-  text-align: center;
   color: white;
   z-index: 1;
   margin-bottom: 20px;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  font-size: 25px;
 }
 
 .video-bg {
@@ -26,23 +27,24 @@
   object-fit: cover;
   z-index: -1;
 }
-
 .animated-button {
+  /* Your button styles */
   position: relative;
-  display: inline-block;
   padding: 12px 24px;
   border: none;
   font-size: 16px;
   background-color: inherit;
   border-radius: 100px;
   font-weight: 600;
-  color: #ffffff40;
+  color: whitesmoke;
   box-shadow: 0 0 0 2px #ffffff20;
   cursor: pointer;
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  margin-left: 10vh;
+  margin-bottom: 30vh;
+  width: 200px; /* Adjust the margin to move the button to the left */
 }
-
 .animated-button span:last-child {
   position: absolute;
   top: 50%;
@@ -50,7 +52,7 @@
   transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
-  background-color: #2196f3;
+  background-color: #ff1354;
   border-radius: 50%;
   opacity: 0;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -62,8 +64,9 @@
 }
 
 .animated-button:hover {
-  box-shadow: 0 0 0 5px #2195f360;
+  box-shadow: 0 0 0 5px #f87575;
   color: #ffffff;
+  scale: 1.5em;
 }
 
 .animated-button:active {
@@ -71,7 +74,14 @@
 }
 
 .animated-button:hover span:last-child {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   opacity: 1;
+}
+.line-1 {
+  font-size: 40px;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  color: white;
+  font: bold;
 }
