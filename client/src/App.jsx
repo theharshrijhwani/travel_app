@@ -1,8 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import "./components/Homepage/Homepage.css";
-import Homepage from "./components/Homepage/Homepage";
+import Homepage from "./components/Homepage/Homepage"; // Make sure the path is correct
 
 function App() {
   return (
@@ -11,5 +8,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

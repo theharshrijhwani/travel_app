@@ -1,21 +1,15 @@
 import React from "react";
-import "./Homepage.css";
-
+import "./Homepage.css"; // You may need to create a CSS file for styling
+import Bgvideo from "../Homepage/Video-bg.mp4";
 function Homepage() {
   return (
     <div className="homepage">
-      <div className="background-iframe">
-        <iframe
-          title="Background"
-          src="https://my.spline.design/untitled-56585c9684016c029caf53834f134d41/"
-          frameBorder="0"
-          width="100%"
-          height="100%"
-        ></iframe>
-      </div>
+      <video src={Bgvideo} autoPlay loop muted className="video-bg" />
       <div className="content">
-        <h1>Embark On a Journey With Us</h1>
-        <button class="join-button">
+        <h1>TripCraft</h1>
+      </div>
+      <div className="Button">
+        <button class="animated-button">
           <span>Join us</span>
           <span></span>
         </button>
