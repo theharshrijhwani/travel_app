@@ -15,7 +15,10 @@ function Homepage() {
       </div>
       <div className="content">
         <h1>Embark On a Journey With Us</h1>
-        <button className="join-button">Join Us</button>
+        <button class="join-button">
+          <span>join Us</span>
+          <span></span>
+        </button>
       </div>
     </div>
   );
