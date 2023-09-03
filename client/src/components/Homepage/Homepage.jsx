@@ -16,7 +16,7 @@ function Homepage() {
       <div className="content">
         <h1>Embark On a Journey With Us</h1>
         <button class="join-button">
-          <span>join Us</span>
+          <span>Join us</span>
           <span></span>
         </button>
       </div>
