@@ -1,12 +1,4 @@
-
-import Login from "./components/Login/Login";
-
 function App() {
-  return (
-    <div>
-      <Login />
-      <Homepage />
-    </div>
-  );
+  return <div>Travel</div>;
 }
 export default App;
