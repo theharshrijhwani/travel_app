@@ -1,12 +1,12 @@
-import React from "react";
-import Dashboard from "./components/Dashboard/";
+import Dashboard from './components/dashboard'
+import './index.css'
 
 const App = () => {
   return (
-    <div>
-      <Dashboard/>
-    </div>
-  );
-};
+    <>
+      <Dashboard />
+    </>
+  )
+}
 
-export default App;
+export default App
