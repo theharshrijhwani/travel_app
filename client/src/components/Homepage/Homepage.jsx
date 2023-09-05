@@ -8,7 +8,9 @@ function Homepage() {
       <div className="content">
         <h1>TripCraft</h1>
       </div>
-      <div class="line-1">Embark Your Journey With us</div>
+      <div class="line-1">
+        Embark Your<br></br>Journey With us
+      </div>
       <div className="Button">
         <button class="animated-button">
           <span>Join us</span>

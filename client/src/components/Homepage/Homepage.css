@@ -1,4 +1,4 @@
-/* Updated CSS with flexbox */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 .homepage {
   display: flex;
   flex-direction: column;
@@ -15,7 +15,8 @@
   margin-bottom: 20px;
   margin-left: 5vw;
   margin-top: 5vh;
-  font-size: 25px;
+  font-size: 20px;
+  font-family: "Lobster", cursive;
 }
 
 .video-bg {
@@ -42,12 +43,13 @@
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
   margin-left: 10vh;
-  margin-bottom: 30vh;
-  width: 200px; /* Adjust the margin to move the button to the left */
+  margin-bottom: 25vh;
+  width: 200px;
+  animation: delay 2s steps(1, end);
 }
 .animated-button span:last-child {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 20px;
@@ -56,6 +58,7 @@
   border-radius: 50%;
   opacity: 0;
   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  margin: top 60px;
 }
 
 .animated-button span:first-child {
@@ -79,9 +82,43 @@
   opacity: 1;
 }
 .line-1 {
-  font-size: 40px;
+  font-size: 80px;
   margin-left: 5vw;
   margin-top: 5vh;
   color: white;
   font: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 4s steps(50, end) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinking {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+@keyframes delay {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
