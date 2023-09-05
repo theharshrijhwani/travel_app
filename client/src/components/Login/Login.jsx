@@ -6,18 +6,26 @@ import globe from "../../assets/logo.png";
 
 const Login = () => {
   useEffect(() => {
-    const signInButton = document.getElementById("signIn");
-    const signUpButton = document.getElementById("signUp");
-    const main = document.getElementById("main");
+    const signInButtton = document.getElementById("sign-in");
+    const signUpButtton = document.getElementById("sign-up");
 
-    signUpButton.addEventListener("click", () => {
-      main.classList.add("right-panel-active");
+    const signInForm = document.getElementById("sign-in-form");
+    const signUpForm = document.getElementById("sign-up-form");
+
+    signInButtton.addEventListener("click", () => {
+      signInButtton.classList.add("link-current");
+      signUpButtton.classList.remove("link-current");
+      signUpForm.classList.add("form-hide");
+      signInForm.classList.remove("form-hide");
     });
 
-    signInButton.addEventListener("click", () => {
-      main.classList.remove("right-panel-active");
+    signUpButtton.addEventListener("click", () => {
+      signInButtton.classList.remove("link-current");
+      signUpButtton.classList.add("link-current");
+      signInForm.classList.add("form-hide");
+      signUpForm.classList.remove("form-hide");
     });
-  }, []);
+  });
 
   return (
     <div className="login-div">
@@ -25,40 +33,29 @@ const Login = () => {
         <img src={globe} width={60} height={60}></img>
         <header>TripCraft!</header>
       </div>
-      <div className="container" id="main">
-        <div className="sign-up-div">
-          <form action="#">
-            <h1>Sign Up</h1>
+      <div className="login-form">
+        <div className="sign-in-opts">
+          <span id="sign-in" className="link link-current">
+            Sign In
+          </span>
+          <span id="sign-up" className="link">
+            Sign Up
+          </span>
+        </div>
+        <div id="sign-in-form" className="sign-in-div">
+          <form method="post" name="sign-in">
+            <input type="email" placeholder="Enter your email" />
+            <input type="password" placeholder="Enter your password" />
+            <button type="button">Sign In!</button>
+          </form>
+        </div>
+        <div id="sign-up-form" className="sign-up-div form-hide">
+          <form method="post" name="sign-in">
             <input type="text" placeholder="Enter your name" />
-            <input type="email" placeholder="Enter email" />
-            <input type="password" placeholder="Enter password" />
-            <button>Sign Up!</button>
+            <input type="email" placeholder="Enter your email" />
+            <input type="password" placeholder="Enter your password" />
+            <button type="button">Sign Up!</button>
           </form>
-        </div>
-        <div className="sign-in-div">
-          <form action="#">
-            <h1>Sign In</h1>
-            <input type="email" placeholder="Enter email" />
-            <input type="password" placeholder="Enter password" />
-            <button>Sign In!</button>
-            <span>
-              Forgot your password?<a href="#">Click here</a>
-            </span>
-          </form>
-        </div>
-        <div className="overlay-container">
-          <div className="overlay">
-            <div className="overlay-left">
-              <h1>Old wanderer huh!</h1>
-              <span>Continue your travel story - sign in now</span>
-              <button id="signIn">Sign In</button>
-            </div>
-            <div className="overlay-right">
-              <h1>New explorer in town..</h1>
-              <span>Sign Up and Discover</span>
-              <button id="signUp">Sign Up</button>
-            </div>
-          </div>
         </div>
       </div>
     </div>
