@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.css";
-import {faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+
 
 const Left = () => {
   return (
